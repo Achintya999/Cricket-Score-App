@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
 
 
@@ -33,28 +32,7 @@ public class AllMatchesActivity extends SecondActivity {
         btnUpcoming.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                progressBar = (ProgressBar) findViewById(R.id.progressBar);
-//                // Start long running operation in a background thread
-//                new Thread(new Runnable() {
-//                    public void run() {
-//                        while (progressStatus < 100) {
-//                            progressStatus += 1;
-//                            // Update the progress bar and display the
-//                            //current value in the text view
-//                            handler.post(new Runnable() {
-//                                public void run() {
-//                                    progressBar.setProgress(progressStatus);
-//                                }
-//                            });
-//                            try {
-//                                // Sleep for 200 milliseconds.
-//                                Thread.sleep(200);
-//                            } catch (InterruptedException e) {
-//                                e.printStackTrace();
-//                            }
-//                        }
-//                    }
-//                }).start();
+//            
                 Intent myIntent2 = new Intent(AllMatchesActivity.this, Upcoming.class);
                 startActivity(myIntent2);
             }
